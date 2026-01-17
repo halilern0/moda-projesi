@@ -116,4 +116,5 @@ async def analiz_et(file: UploadFile = File(...), ulke: str = Form("tr-tr")):
         return {"hata": f"Sunucu Hatası: {str(e)}"}
 
 if __name__ == "__main__":
+
     uvicorn.run(app, host="0.0.0.0", port=8017)
