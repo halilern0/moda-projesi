@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+requests
+duckduckgo-search
+python-multipart
+google-generativeai
+pillow
