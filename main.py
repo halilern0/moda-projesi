@@ -4,10 +4,11 @@ import requests
 import base64
 import json
 import urllib.parse
+import os
 
 app = FastAPI()
 
-API_KEY = "AIzaSyBAFos3YTfm_vXDRvf3cOgt-b7Af1onrQA"
+API_KEY = os.environ.get("GOOGLE_API_KEY")
 MODEL_NAME = "gemini-2.5-flash"
 
 def magaza_linkleri_olustur(urun_adi, cinsiyet, ulke_kodu="tr-tr"):
